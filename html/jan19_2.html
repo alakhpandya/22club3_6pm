@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        in-line elements/tags: a, input, label, img
+        block elements/tags: p, h1...h6, li, form, div
+     -->
+    <!-- <form method="get" action="">       default -->
+    <!-- <form method="post"> -->
+    <form>
+        <div>
+            First Name: <input type="text" name="fName">
+        </div>
+        <!-- <p>a</p> -->
+        <div>
+            <label for="mName">Middle Name:</label> <input id="mName">
+        </div>
+        <div>
+            <input placeholder="Last Name">
+        </div>
+        <div>
+            <!-- <input required type="email" placeholder="Email"> -->
+            <input type="email" placeholder="Email">
+        </div>
+        <div>
+            <input type="password" name="pwd" placeholder="Password" id="">
+        </div>
+        <div>
+            T-shirt color: <input type="color" name="" id="">
+        </div>
+        <div>
+            <!-- Date of birth: <input type="date" name="" id=""> <br>
+            Time of birth: <input type="time" name="" id=""> -->
+
+            Date & Time of Birth: <input type="datetime-local" name="" id="">
+            <!-- <input type="datetime" name="" id=""> -->
+
+            Month & Year of Passing: <input type="month" name="" id=""> <br>
+            Duration of stay: <input type="week" name="" id="">
+        </div>
+        <div>
+            Upload your photo: <input type="file" name="" id="">
+        </div>
+        <div>
+            How did you come to know about us?
+            <input type="checkbox" name="" id=""> Newspaper <br>    
+            <input type="checkbox" name="" id=""> Seminar   <br>
+            <input type="checkbox" name="" id=""> Friend    <br>
+            <input type="checkbox" name="" id=""> Social Midea    <br>
+            <input onclick="document.getElementById('other').type='text'" type="checkbox" name="" id=""> Other
+            <input type="hidden" name="" id="other" placeholder="Please Specify">
+        </div>
+        <div>
+            No of seats: <input min="0" max="6" type="number" name="" id="">
+        </div>
+        <div>
+            <p>1. Which tag is used to create main heading?</p>
+            <input type="radio" name="q1" id="para"> <label for="para">paragraph tag</label> <br>
+            <input type="radio" name="q1" id="h1"> <label for="h1">h1 tag</label> <br>
+            <input type="radio" name="q1" id="h2"> <label for="h2">h2 tag</label> <br>
+            <input type="radio" name="q1" id="h3"> <label for="h3">h3 tag</label>
+
+            <p>1. Which tag is used to create paragraph?</p>
+            <input type="radio" name="q2" id="para2"> <label for="para2">paragraph tag</label> <br>
+            <input type="radio" name="q2" id="h12"> <label for="h12">h1 tag</label> <br>
+            <input type="radio" name="q2" id="h22"> <label for="h22">h2 tag</label> <br>
+            <input type="radio" name="q2" id="h32"> <label for="h32">h3 tag</label>
+        </div>
+        <div>
+            <p>Choose your budget:</p>
+            <!-- 10000<input min="10000" max="50000" type="range" name="budget" id="">50000 -->
+            10,000 <input id="rangeInput" type="range" min="10000" max="50000" step="1000" oninput="amount.value=rangeInput.value" />
+            <input id="amount" type="number" value="30000" min="10000" max="50000" oninput="rangeInput.value=amount.value" />
+        </div>
+
+
+        <br> <br>
+        <div>
+            <input checked type="checkbox" name="" id="whatsapp">
+            <label for="whatsapp">Send me offers & updates on whatsapp.</label>
+        </div>
+        <div>
+            <input required type="checkbox" name="" id="tnc">
+            <label for="tnc">I agree to terms of use.</label>
+        </div>
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear Form">
+            <input type="button" value="No Action">
+            <button>Normal Button</button>
+        </div>
+    </form>
+</body>
+
+</html>

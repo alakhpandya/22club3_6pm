@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: skyblue;
+    }
+    h1{
+        /* text-decoration: underline; */
+        /* text-decoration: overline; */
+        /* text-decoration: line-through; */
+    }
+    a{
+        text-decoration: none;
+    }
+
+    /* Multiple selectors */
+    /* div a{
+        color: red;
+    } 
+    
+    div li a{
+        color: red;
+    } 
+    
+    div a li{
+        background-color: red;
+    }
+    */
+
+    /*
+    h1, a, li{
+        color: red;
+    }
+    */
+
+    /* selecting direct child */
+    /*     
+    div > a{
+        color: red;
+    } 
+    */
+
+    /* selecting by previous sibling */
+    /*     
+    div + a{
+        color: red;
+    }
+    */
+
+    /*
+    li:nth-child(3), li:nth-child(5){
+        background-color: burlywood;
+    }
+    */
+    /*     
+    li:nth-child(even){
+        background-color: greenyellow;
+    }
+    li:nth-child(odd){
+        background-color: darkgreen;
+    } 
+    
+    li:nth-child(3n-7){
+        background-color: yellow;
+    }
+    */
+
+    /* Selecting by attribute */
+    /*
+    a[target = "_blank"]{
+        color: red;
+    } 
+    li[value = "301"]{
+        background-color: black;
+        color: white;
+    }
+    */
+
+    /* The one below will not work */
+    /*
+    li[value = "302"]{
+        background-color: maroon;
+        color: white;
+    }
+    a[target]{
+        color: black;
+    }
+    */
+</style>
+<body>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eum!</h1>
+    <div>
+        <a href="#">Link 1</a> |
+        <a href="#">Link 2</a>
+        <ul>
+            <li><a target="" href="#">Lorem, ipsum.</a></li>
+            <li><a href="#">Assumenda, quo!</a></li>
+            <li><a target="_blank" href="#">Eligendi, dignissimos.</a></li>
+            <li><a target="_blank" href="#">Tempore, quas.</a></li>
+            <li><a href="#">Porro, quod.</a></li>
+            <li><a href="#">Officia, nemo!</a></li>
+            <li><a target="_self" href="#">Asperiores, error.</a></li>
+            <li><a target="_self" href="#">Suscipit, a.</a></li>
+            <li><a href="#">A, quasi.</a></li>
+            <li><a href="#">Odit, accusamus.</a></li>
+            <li><a href="#">Quas, voluptatum?</a></li>
+            <li><a href="#">Debitis, mollitia!</a></li>
+            <li><a href="#">Alias, reprehenderit.</a></li>
+            <li><a href="#">Excepturi, accusantium.</a></li>
+            <li><a href="#">Cupiditate, repudiandae!</a></li>
+        </ul>
+        <a href="#">Link 3</a> |
+        <a href="#">Link 4</a>
+    </div>
+    <a href="#">Link 5</a> |
+    <a href="#">Link 6</a>
+    <div>
+        <a href="#">Link 7</a> |
+        <a href="#">Link 8</a>
+        <ol>
+            <a href="#"><li value="201">Lorem, ipsum.</li></a>
+            <a href="#"><li>Rem, vel?</li></a>
+            <a href="#">
+                <li value="301">Doloremque, recusandae.</li>
+            </a>
+            <a href="#"><li>Impedit, quisquam.</li></a>
+            <a href="#"><li value="">Ipsam, repudiandae.</li></a>
+        </ol>
+        <a href="#">Link 9</a> |
+        <a href="#">Link 10</a>
+    </div>
+    <a href="#">Link 11</a> |
+    <a href="#">Link 12</a>
+</body>
+</html>
+
+<!-- 
+    Next Class: Pseudo Classes
+ -->

@@ -1,0 +1,18 @@
+/* Poppins */
+@font-face{
+    font-family: "Yash's fonts";
+    src: url("/font/Poppins/Poppins-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Yash's fonts";
+    src: url("/font/Poppins/Poppins-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+/* Alkarta */
+@font-face{
+    font-family: alkarta;
+    src: url("/font/Alkatra/Alkatra-VariableFont_wght.ttf");
+}

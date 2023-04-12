@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Table -->
+    <table bgcolor="yellow" align="center" border="1">
+        <thead bgcolor="orange">
+            <tr>
+                <th rowspan="2">Sr.No.</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Subjects</th>
+            </tr>
+            <tr>
+                <!-- <th>Sr.No</th> -->
+                <!-- <th>Name</th> -->
+                <th>Subject 1</th>
+                <th>Subject 2</th>
+            </tr>
+        </thead>
+        <tbody bgcolor="skyblue" align="center">
+            <tr>
+                <td align="right">1</td>
+                <td>Vinay</td>
+                <td>45</td>
+                <td bgcolor="red">20</td>
+            </tr>
+            <tr>
+                <td align="right">2</td>
+                <td>Ratnakar Shinde</td>
+                <td align="center" colspan="2">85</td>
+                <!-- <td>85</td> -->
+            </tr>
+            <tr bgcolor="green" align="center">
+                <td align="right">3</td>
+                <td>Neha</td>
+                <td rowspan="2" align="center">97</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td align="right">4</td>
+                <td>Priyanka</td>
+                <!-- <td>97</td> -->
+                <td>68</td>
+            </tr>
+            <tr>
+                <td align="right">5</td>
+                <td>Jignasa</td>
+                <td>
+                    <img src="/photos/trophy.png" height="30px" alt="">
+                    100
+                </td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ids & classes -->
+    <!-- 
+        Example of id: passport
+        1. It is not compulsory for every element to have id.
+        2. An element can not have more than 1 id.
+        3. We cannot give the same id to multiple elements.
+
+        id means '#'
+     -->
+
+    <!-- 
+        Example of class: whatsapp group
+        1. It is not compulsory for every element to have class.
+        2. An element can have more than 1 classes.
+        3. We can give the same class to multiple elements.
+
+        class means '.'
+     -->
+
+    <a href="#" id="link"></a>
+    
+    <!-- p#site-text -->
+    <p id="site-text"></p>
+
+    
+    <a href="#" class="nav-link"></a>
+    <p class="nav-link bold-text yellow-bg"></p>
+    <ul class="navbar">
+        <!-- li.nav-link.bold-text.yellow-bg -->
+        <li class="nav-link bold-text yellow-bg"></li>
+
+        <!-- li#link$.nav-link.bold-text.yellow-bg*4 -->
+        <li id="link1" class="nav-link bold-text yellow-bg"></li>
+        <li id="link2" class="nav-link bold-text yellow-bg"></li>
+        <li id="link3" class="nav-link bold-text yellow-bg"></li>
+        <li id="link4" class="nav-link bold-text yellow-bg"></li>
+    </ul>
+
+    <!-- 5 div with classes- box, grey-bg, font-lite, ids- item1, item2... -->
+    <!-- 
+        div.box.grey-bg.font-lite#item$*5 or
+        .box.grey-bg.font-lite#item$*5 
+    -->
+    <div class="box grey-bg font-lite" id="item1"></div>
+    <div class="box grey-bg font-lite" id="item2"></div>
+    <div class="box grey-bg font-lite" id="item3"></div>
+    <div class="box grey-bg font-lite" id="item4"></div>
+    <div class="box grey-bg font-lite" id="item5"></div>
+</body>
+</html>

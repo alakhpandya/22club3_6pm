@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    a{
+        background-color: brown;
+        color: white;
+        /* No inline elements takes height or width except <img> and <button> */
+        width: 500px;
+        height: 500px;
+
+        /* border-width: 5px; */
+        /* border-color: greenyellow; */
+        /* border-style: solid; */
+
+        border: solid greenyellow 3px;
+    }
+    #btn1{
+        border: none;
+        border-bottom: solid;
+        border-left: 3px red solid;
+        border-top: 1px solid blue;
+        border-right: green 4px solid;
+    }
+
+    button{
+        background-color: black;
+        color: greenyellow;
+        border: solid;
+    }
+    #btn2{
+        border-radius: 5px;
+    }
+    #btn3{
+        border-radius: 20px;
+        height: 40px;
+    }
+    #btn4{
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 5px;
+    }
+    #btn5{
+        border: solid 1px;
+        /* border: none; */
+        border-radius: 10px;
+        background-color: greenyellow;
+        color: black;
+        height: 25px;
+        width: 69px;
+        cursor: pointer;
+    }
+    #btn5:hover{
+        color: greenyellow;
+        background-color: black;
+    }
+
+
+    #btn6{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    #btn7{
+        font-size: 105px;
+        height: 2em;
+        width: 5em;
+        border-radius: 1em;
+    }
+
+    #btn8{
+        height: 100px;
+        width: 200px;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <a href="#">My Link</a> <br> <br>
+    <div id="btn1-box"><button id="btn1">Button 1</button></div> <br>
+    <div id="btn2-box"><button id="btn2">Button 2</button></div> <br>
+    <div id="btn3-box"><button id="btn3">Button 3</button></div> <br>
+    <div id="btn4-box"><button id="btn4">Button 4</button></div> <br>
+    <div class="container"><div id="btn5-box"><button id="btn5">Button 5</button></div></div> <br>
+    <div class="btn6-box-container"><div id="btn6-box"><button id="btn6">B-6</button></div></div>
+    <br>
+    <div><button id="btn7">Button 7</button></div>
+    <br>
+    <div><button id="btn8">Button 8</button></div>
+    <br>
+</body>
+</html>
