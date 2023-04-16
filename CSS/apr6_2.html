@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>Document</title>
 </head>
 <style>
-    body{
-        background-color: black;
+    body {
+        /* background-color: black; */
     }
-    a{
+
+    a {
         background-color: brown;
         color: white;
         /* No inline elements takes height or width except <img> and <button> */
@@ -23,7 +25,8 @@
 
         border: solid greenyellow 3px;
     }
-    #btn1{
+
+    #btn1 {
         border: none;
         border-bottom: solid;
         border-left: 3px red solid;
@@ -31,24 +34,28 @@
         border-right: green 4px solid;
     }
 
-    button{
+    button {
         background-color: black;
         color: greenyellow;
         border: solid;
     }
-    #btn2{
+
+    #btn2 {
         border-radius: 5px;
     }
-    #btn3{
+
+    #btn3 {
         border-radius: 20px;
         height: 40px;
     }
-    #btn4{
+
+    #btn4 {
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 5px;
     }
-    #btn5{
+
+    #btn5 {
         border: solid 1px;
         /* border: none; */
         border-radius: 10px;
@@ -58,42 +65,99 @@
         width: 69px;
         cursor: pointer;
     }
-    #btn5:hover{
+
+    #btn5:hover {
         color: greenyellow;
         background-color: black;
     }
 
 
-    #btn6{
+    #btn6 {
         height: 50px;
         width: 50px;
         border-radius: 50%;
     }
-    #btn7{
+
+    #btn7 {
         font-size: 105px;
         height: 2em;
         width: 5em;
         border-radius: 1em;
     }
 
-    #btn8{
+    #btn8 {
         height: 100px;
         width: 200px;
         border-radius: 50%;
     }
+
+    .master-container{
+        border: solid red;
+        /* height: 100vh; */
+        /* background-image: url('images/kids-ge894a04c2_1920.jpg'); */
+        /* background-size: width height; */
+        /* background-size: 300px 400px; */
+        /* background-size: 100vw; */
+        /* background-size: auto; */
+        /* background-size: contain; */
+        /* background-size: cover; */
+        /* background-size: 100vw 100vh; */
+
+        /* background-size: 290px; */
+        /* background-repeat: no-repeat; */
+        /* background-repeat: repeat-x; */
+        /* background-repeat: repeat-y; */
+        /* background-repeat: repeat;      default */
+        /* background-repeat: round; */
+
+        /* background-position-x: 200px;
+        background-position-y: 100px;
+        background-position-x: -100px;
+        background-position-y: -50px; */
+
+        /* background-position: 100px 50px; */
+        /* background-position: top left;      default */
+        /* background-position: top center;
+        background-position: top right;
+        background-position: bottom right;
+        background-position: bottom left;
+        background-position: bottom center;
+        background-position: left center;
+        background-position: right center;
+        background-position: center; */
+
+        /* background-attachment: fixed; */
+        /* background: url('/images/kids-ge894a04c2_1920.jpg') no-repeat center/290px; */
+        /* background: url('/images/kids-ge894a04c2_1920.jpg') no-repeat top right/400px 200px; */
+        /* background: url('/images/kids-ge894a04c2_1920.jpg') no-repeat top 290px/center; */
+        /* background: top left/100vw fixed url('/images/kids-ge894a04c2_1920.jpg') no-repeat; */
+    }
+    .essay{
+        font-size: 1.5rem;
+    }
 </style>
+
 <body>
-    <a href="#">My Link</a> <br> <br>
-    <div id="btn1-box"><button id="btn1">Button 1</button></div> <br>
-    <div id="btn2-box"><button id="btn2">Button 2</button></div> <br>
-    <div id="btn3-box"><button id="btn3">Button 3</button></div> <br>
-    <div id="btn4-box"><button id="btn4">Button 4</button></div> <br>
-    <div class="container"><div id="btn5-box"><button id="btn5">Button 5</button></div></div> <br>
-    <div class="btn6-box-container"><div id="btn6-box"><button id="btn6">B-6</button></div></div>
-    <br>
-    <div><button id="btn7">Button 7</button></div>
-    <br>
-    <div><button id="btn8">Button 8</button></div>
-    <br>
+    <div class="master-container">
+        <a href="#">My Link</a> <br> <br>
+        <div id="btn1-box"><button id="btn1">Button 1</button></div> <br>
+        <div id="btn2-box"><button id="btn2">Button 2</button></div> <br>
+        <div id="btn3-box"><button id="btn3">Button 3</button></div> <br>
+        <div id="btn4-box"><button id="btn4">Button 4</button></div> <br>
+        <div class="container">
+            <div id="btn5-box"><button id="btn5">Button 5</button></div>
+        </div> <br>
+        <div class="btn6-box-container">
+            <div id="btn6-box"><button id="btn6">B-6</button></div>
+        </div>
+        <br>
+        <div><button id="btn7">Button 7</button></div>
+        <br>
+        <div><button id="btn8">Button 8</button></div>
+        <br>
+        <h1>School Kids</h1>
+        <p class="essay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, illum culpa officia nihil molestias, nulla, qui veritatis saepe dolorem voluptatum recusandae. Deleniti magnam fuga consectetur ullam temporibus minus. Facere recusandae facilis dolores quod, est odio quam repellat voluptates placeat tempore id necessitatibus repellendus esse nemo nam nihil, rem optio reprehenderit odit sapiente velit totam. Perferendis rem cupiditate, vel reiciendis nam neque. Molestias eum aperiam nobis sed omnis provident est, quas, doloremque nesciunt, dolore adipisci quis accusantium laudantium. Sapiente amet, suscipit quas error voluptatem praesentium nisi maxime sint illo laboriosam ullam assumenda at illum. Obcaecati repellat neque facere dolor earum, rem magni soluta veniam atque tempora libero labore aspernatur, nam exercitationem ea iste numquam aperiam laborum magnam. Aliquam rem dolor aliquid voluptas autem, reiciendis exercitationem consectetur? Repellat nesciunt eum ipsam perferendis laborum totam, doloremque, facilis voluptates molestias illum ipsum similique placeat atque eos. Impedit laboriosam quas minima cumque? Quam tenetur fuga, officia dolores facere totam voluptatum harum quas corrupti iste facilis similique quae officiis molestiae nesciunt rem aliquid veniam qui minima impedit molestias unde! Voluptatum debitis placeat qui atque voluptates libero ratione accusantium, odit non in nulla, maiores inventore pariatur optio laudantium eum rem incidunt et sequi assumenda consectetur, facilis quibusdam! Inventore nihil dignissimos non voluptatem autem? Earum, officia amet nihil sed fuga quaerat facere iusto nemo modi provident libero esse molestias aspernatur exercitationem, eaque dolorum voluptates! Autem totam quo non excepturi distinctio velit harum omnis voluptatum, enim saepe tempora perspiciatis cupiditate? Repellendus molestias nam quasi distinctio saepe veniam libero, aliquam cum, dolor tempore excepturi magni id! Numquam perspiciatis non voluptas aliquid minus alias maxime, harum iure laudantium quo delectus natus tempora, labore unde facilis voluptate possimus quam aspernatur in. Deleniti excepturi mollitia molestias quam obcaecati adipisci, eveniet, fugit blanditiis rem quis iusto minima dignissimos sit. Error quidem numquam itaque, dolores, provident ipsam corrupti, dignissimos magni at harum quae quaerat. Incidunt fugiat perspiciatis, earum, modi, suscipit ipsam nulla reiciendis ullam iste corrupti reprehenderit. Amet at velit, fugit porro ad voluptates inventore incidunt, officia suscipit officiis labore dolore ea. Quidem non ratione porro quo distinctio architecto. Itaque accusantium cumque omnis. Similique maiores obcaecati cum assumenda, sed commodi harum doloremque. Recusandae repellat officia minus aperiam ratione adipisci commodi assumenda repudiandae, facilis illo nemo nobis dolor voluptates? Accusantium, aperiam totam culpa eaque quaerat iusto in velit delectus vitae. Nam sed quibusdam, doloribus dolor sunt, natus incidunt hic illo accusamus sit illum eos nisi deserunt eveniet ab, tenetur maxime. Ducimus distinctio, omnis, voluptas asperiores quas eum debitis placeat commodi, quae sed voluptate! Doloremque deserunt nam, quo autem ipsam, neque aliquid eius officiis consectetur iusto repellendus dignissimos perferendis voluptatum voluptas, sequi exercitationem hic numquam adipisci possimus repudiandae? Iusto dolorem ut commodi, quasi a ipsam expedita similique? Quo quidem, earum voluptatum possimus tenetur, veniam explicabo deserunt commodi odit ad eaque deleniti accusamus tempore. Asperiores consectetur temporibus rem nisi perferendis repudiandae, dolorem ab quidem ducimus minus illum pariatur eos vero. Tenetur qui consectetur sequi repellendus voluptate suscipit magni expedita officiis est, pariatur sapiente beatae quaerat facilis et distinctio exercitationem earum voluptas, veritatis molestiae ullam. Qui ducimus quod reiciendis dolor doloremque eius voluptatum? Aliquam, deserunt numquam? Asperiores, repudiandae, sit dicta exercitationem facilis ut assumenda tempora sint recusandae illum vitae similique. Ex placeat dicta inventore fugiat maxime, laboriosam rem distinctio corrupti minima doloremque non assumenda nihil dignissimos consequuntur quis dolore! Minima, explicabo. Vitae delectus natus nostrum ducimus nisi optio pariatur possimus voluptates expedita? Ea esse eius mollitia, impedit repellat voluptatem consequatur fugiat? Veritatis ducimus ipsam qui exercitationem, alias amet quo consequuntur, numquam reprehenderit dolor eos, sunt ullam perspiciatis obcaecati magnam eligendi consequatur repudiandae. Doloribus id, numquam consequatur illo recusandae enim sed unde similique magni placeat quo cupiditate aspernatur. Ab itaque quidem libero, reprehenderit sit esse ipsum eaque quis atque dignissimos, aut suscipit, fuga impedit quo accusamus. Facere illo nulla molestiae, quisquam, sint autem a cumque dicta aperiam voluptatum praesentium, nemo officia impedit reprehenderit nobis sapiente magnam! Sapiente quaerat aperiam voluptate recusandae at quam unde voluptates optio aspernatur aliquam, porro ea provident corporis reiciendis quo natus, doloribus eaque nisi blanditiis ad quidem? Fugiat doloremque tempora rerum sequi? Vel, corporis fugit magnam expedita atque iusto labore ea. Facere, quod quos. Impedit veniam, reiciendis non blanditiis ullam itaque totam cupiditate delectus iste exercitationem odit aspernatur hic. Amet sint quae in, fugiat modi quod vitae architecto possimus impedit aliquid soluta maxime hic officia labore necessitatibus, nostrum neque veniam tenetur, veritatis eveniet. Veritatis vitae magnam quasi odio itaque modi ipsa sequi perspiciatis, aperiam explicabo a expedita commodi. Praesentium ipsam nemo perferendis id numquam pariatur aliquid tempore distinctio sit cum at placeat, aliquam recusandae eos nobis porro corrupti veritatis consequatur maiores, dolorem quibusdam aspernatur totam! Laborum aperiam eligendi tempora dolores neque expedita? Sed quisquam possimus eligendi ipsum minus, voluptas eum minima deleniti consectetur inventore aliquid accusamus earum quasi reiciendis praesentium incidunt suscipit quibusdam temporibus voluptatem? Ad veritatis rem minima. Perferendis ut possimus reiciendis officiis exercitationem dignissimos recusandae sunt ducimus amet. Eos repellendus accusantium necessitatibus, culpa quasi placeat. Odit, facilis quas? Unde iusto doloremque deserunt esse, est excepturi, asperiores deleniti, omnis ex laboriosam laudantium? Cupiditate suscipit, in ullam itaque, vero obcaecati at nostrum maxime repellat nobis harum corrupti. Incidunt mollitia, sint deserunt placeat aliquam dolorum, aperiam est, veritatis illum quibusdam aut tempore reprehenderit et nihil libero animi itaque. Harum, earum possimus iste deserunt labore molestias delectus saepe tempora voluptatibus aliquid nesciunt magnam quas reprehenderit provident impedit a aut ullam quia expedita itaque sint consequuntur. Quasi doloribus aspernatur amet dignissimos vero deserunt nobis unde dolor quidem alias provident impedit rerum illo blanditiis, quod praesentium voluptatibus saepe assumenda cum ratione totam neque? Magnam quia illo harum autem labore facilis libero mollitia omnis dolor molestiae atque, sapiente delectus, doloremque ad tempora repellat vitae rerum, quo officia. Similique blanditiis rerum consequatur consectetur sed perferendis facilis atque reprehenderit quasi eveniet. Beatae maxime quaerat hic perspiciatis dignissimos atque saepe laboriosam deleniti omnis. Officiis dicta beatae ad excepturi mollitia impedit quibusdam culpa nihil ducimus facere ipsum, nemo quo doloremque debitis natus. Quo, nesciunt accusamus dignissimos quas, quae tempore suscipit similique voluptates dolor natus omnis.</p>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        /* background: no-repeat linear-gradient(to top, #ec0a47, #f8591c, #f08f00, #d6bf00, #a8eb12); */
+        background: linear-gradient(to top, #ec0a47, #f8591c, #f08f00, #d6bf00, #a8eb12);
+    }
+    .container{
+        /* height: 90vh; */
+        /* border: solid green; */
+        /* background-color: #3C486B; */
+        /* background-image: linear-gradient(to right, #3C486B, purple, violet); */
+        /* background-image: linear-gradient(to left, #3C486B, purple, violet); */
+        /* background-image: linear-gradient(to top, #3C486B, purple, violet); */
+        /* background-image: linear-gradient(to bottom, #3C486B, purple, violet); */
+        /* background-image: linear-gradient(45deg, #3C486B, purple, violet); */
+        /* background-image: linear-gradient(180deg, #3C486B, purple, violet); */
+
+        /* background-image: linear-gradient(to right top, #ec0a47, #f8591c, #f08f00, #d6bf00, #a8eb12); */
+
+        /* background: radial-gradient(circle, #ec0a47, #f8591c, #f08f00, #d6bf00, #a8eb12); */
+        /* background: radial-gradient(#ec0a47, #f8591c, #f08f00, #d6bf00, #a8eb12); */
+    }
+
+    .container{
+        border: solid;
+        position: relative;
+    }
+    .inner-container{
+        border: solid brown;
+        width: 90%;
+        margin: auto;       /* Ignore this */
+        /* position: relative; */
+    }
+
+    /* Positions */
+    #btn1{
+        /* position: static;   default */
+        /* We can not use: top, left, bottom & right when position is static */
+    }
+    #btn2{
+        position: relative;
+        /* Now we can use: top, left, bottom & right */
+        /* We pluck the element out of the layer when we give any position other than static */
+        /* The element keeps it original position reserved */
+        bottom: 10px;
+        /* top: 15px; */
+        /* left: 20px; */
+        right: 30px;
+    }
+    #btn3{
+        position: absolute;
+        /* The element does not keep it original position reserved. It will move with respect to its parent which has position relative, if no parent has position relative then it will move with respect to body. */
+        top: 10px;
+        right: 10px;
+        /* left: 10px; */
+        /* bottom: 10px; */
+    }
+</style>
+<body>
+    <br><br><br><br><br>
+    <div class="container">
+        <br><br><br><br>
+        <div class="inner-container">
+            <br><br><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn" id="btn1">Static</button>
+            <button class="btn" id="btn2">Relative</button>
+            <button class="btn" id="btn3">Absolute</button>
+            <button class="btn" id="btn4">Position Sticky</button>
+            <button class="btn" id="btn5">Fixed</button>
+            <br><br><br><br>
+        </div>
+        <br><br><br><br>
+    </div>
+</body>
+</html>
