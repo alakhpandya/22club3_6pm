@@ -15,11 +15,25 @@ c1 + c2 = (5 + 7i) + (3 - 4i)
 */
 
 #include<stdio.h>
+
 struct complex{
-    int real, imag;
+    float real, imag;
 };
 
-struct complex add(struct complex c1, struct complex c2){
+struct complex cScan(){
+    struct complex c;
+    printf("Real Part: ");
+    scanf("%f", &c.real);
+    printf("Imaginary Part: ");
+    scanf("%f", &c.imag);
+    return c;
+}
+
+void cPrint(struct complex c){
+    printf("%.3f + (%.3fi)", c.real, c.imag);
+}
+
+struct complex cAdd(struct complex c1, struct complex c2){
     struct complex c;
     c.real = c1.real + c2.real;
     c.imag = c1.imag + c2.imag;
@@ -33,18 +47,14 @@ int main()
     char op;
 
     printf("Enter first complex number:\n");
-    printf("Real Part: ");
-    scanf("%d", &c1.real);
-    printf("Imaginary Part: ");
-    scanf("%d", &c1.imag);
-    printf("c1: %d + (%di)", c1.real, c1.imag);
+    c1 = cScan();
+    printf("c1: ");
+    cPrint(c1);
 
     printf("Enter second complex number:\n");
-    printf("Real Part: ");
-    scanf("%d", &c2.real);
-    printf("Imaginary Part: ");
-    scanf("%d", &c2.imag);
-    printf("c2: %d + (%di)", c2.real, c2.imag);
+    c2 = cScan();
+    printf("c2: ");
+    cPrint(c2);
 
     printf("Operation (+, -, * or /): ");
     scanf(" %c", &op);
@@ -52,11 +62,12 @@ int main()
         case '+':
             // ans.real = c1.real + c2.real;
             // ans.imag = c1.imag + c2.imag;
-            ans = add(c1, c2);
+            ans = cAdd(c1, c2);
             break;
         case '-':
-            ans.real = c1.real - c2.real;
-            ans.imag = c1.imag - c2.imag;
+            // ans.real = c1.real - c2.real;
+            // ans.imag = c1.imag - c2.imag;
+            ans = cSub(c1, c2);
             break;
         case '*':
             ans.real = (c1.real*c2.real - c1.imag*c2.imag);
