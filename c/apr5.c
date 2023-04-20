@@ -126,7 +126,14 @@ eg:
 RollNo  Chem    Maths   Phy     Percentage
 1       75      85      50      70
 
-6. Write a program to add, subtract and multiply two complex numbers using structures.
+6. Write a program to add, subtract, multiply and divide two complex numbers using structures to functions according to choice of the user.
+Test Cases:
+(6 + 4i) + (8 - 2i) = 14 + 2i
+(10 + 3i) - (7 - 4i) = 3 + 7i
+(2 + 3i) * (1 + 5i) = -13 + 13i
+(3 + 4i) / (8 - 2i) = 0.235 + 0.559i
+
+
 
 7. Write a structure to store the roll no., name, age (between 11 to 14) and address of students (more than 10). Store the information of the students.
 1 - Print the names of all the students having age 14.
