@@ -1,0 +1,85 @@
+/* Ignore this for a while */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+.card-container{
+    /* border: solid red; */
+    width: fit-content;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;       /* Ignore */
+    background-color: #f0f0f0;
+    position: relative;
+}
+.product-img{
+    height: 300px;
+}
+
+.img-container{
+    position: relative;
+}
+
+.offer{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: #FE3D30;
+    height: 60px;
+    width: 60px;
+    padding: 15px 0 0 10px;      /* Ignore */
+    box-sizing: border-box;     /* Ignore */
+    border-radius: 50%;
+    color: white;
+}
+.heart{
+    position: absolute;
+    color: white;
+    left: 10px;
+    bottom: 20px;
+}
+.heart-icon{
+    font-size: 1.4rem;
+    color: #FE3D30;
+    cursor: pointer;
+}
+.heart-icon:hover{
+    color: white;
+}
+
+
+.best-seller{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+}
+
+.price-container{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.price-container .mrp{
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+    /* text-decoration: none; */
+    text-decoration: line-through;
+}
+
+.ratings{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.star-icon{
+    color: #FE3D30;
+}
