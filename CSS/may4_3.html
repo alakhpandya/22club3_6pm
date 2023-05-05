@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Pseudo Elements: before & after */
+
+    /* #title1::before{ */
+    h1::before{
+        content: "I";
+        color: orangered;
+    }
+    h1::after{
+        content: "India";
+        color: green;
+    }
+
+    #i{
+        color: orangered;
+    }
+    #india{
+        color: green;
+    }
+    img{
+        width: 400px;
+    }
+
+    #title2{
+        text-align: center;
+    }
+    #title2::before{
+        color: yellow;
+        background-color: orangered;
+        display: block;
+        content: "We are";
+    }
+    #title2::after{
+        background-color: green;
+        color: yellow;
+        display: block;
+    }
+    /* 
+    Rules:
+    before & after stays inside the target element, they just go before or after the content of target element.
+    That's why, we can't apply pseudo elements on self-closing tags(empty tags)
+    It is must to write 'content' inside before or after. Content may be null but without content they will not work.
+    */
+    img::before{
+        content: "Hello";
+    }
+    img::after{
+        content: "World!";
+    }
+
+
+</style>
+<body>
+    <h1 id="title1">Love</h1>
+    <!-- <h1><span id="i">I</span>Love<span id="india">India</span></h1> -->
+    <img src="/images/bg1.jpg" alt="">
+    <h1 id="title2">Proud Of</h1>
+</body>
+</html>
