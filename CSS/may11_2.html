@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a{
+        text-decoration: none;
+    }
+    .btn{
+        border: solid maroon;
+        background-color: pink;
+        color: maroon;
+    }
+    div{
+        margin: 1rem 0;
+    }
+
+    #btn1{
+        margin-right: 50px;
+    }
+    /* Margins do not overlap if any non-block element is involved */
+    #btn2{
+        margin-left: 50px;
+    }
+
+    #btn3-box{
+        border: solid;
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    #btn4-box{
+        border: solid;
+        width: 100px;
+        margin-left: auto;
+    }
+
+    #btn5-box{
+        width: fit-content;
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* margin: 0 auto; */
+        margin: auto;
+    }
+    /* 
+    Margin auto works only with block elements after giving width.
+    Margin auto works only horizontally.
+    */
+
+    /* Next Class: Padding (in this same file) */
+</style>
+<body>
+    <a href="#" class="btn" id="btn1">Button 1</a>
+    <a href="#" class="btn" id="btn2">Button 2</a>
+    <div id="btn3-box"><a href="#" class="btn" id="btn3">Button 3</a></div>
+    <div id="btn4-box"><a href="#" class="btn" id="btn4">Button 4</a></div>
+    <div id="btn5-box"><a href="#" class="btn" id="btn5">Button 5</a></div>
+    <div><a href="#" class="btn" id="btn6">Button 6</a></div>
+    <div><a href="#" class="btn" id="btn7">Button 7</a></div>
+    <div><a href="#" class="btn" id="btn8">Button 8</a></div>
+    <div><a href="#" class="btn" id="btn9">Button 9</a></div>
+    <div><a href="#" class="btn" id="btn10">Button 10</a></div>
+</body>
+</html>
