@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Complete CSS Reset */
+    *, ::before, ::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .boxes{
+        border: solid;
+        width: 300px;
+        margin: 1rem auto;
+        background-color: paleturquoise;
+        box-sizing: border-box;
+    }
+
+    #box1{
+        padding: 25px;
+        /* width: 326.8px; */
+    }
+    #box2{
+        /* width: 360.8px; */
+        border: 10px solid;
+        /* Effective width: 380.8px */
+    }
+    #box3{
+        padding: 0.5rem 1.9rem;
+        /* width: 316px; */
+        /* 
+        Effective width: 380.8px 
+        padding: 30.4*2 = 60.8px
+        width: 320px - 4px border = 316px
+        */
+
+    }
+
+</style>
+<body>
+    <h1>Hello</h1>
+    <p>World!</p>
+    <div class="boxes" id="box1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis explicabo sed quis aut magni. Eum saepe molestiae corporis earum enim.</div>
+    <div class="boxes" id="box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis explicabo sed quis aut magni. Eum saepe molestiae corporis earum enim.</div>
+    <div class="boxes" id="box3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis explicabo sed quis aut magni. Eum saepe molestiae corporis earum enim.</div>
+</body>
+</html>

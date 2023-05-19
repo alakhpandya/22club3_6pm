@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500&family=Playfair+Display:wght@600;700&display=swap');
+    
+    *, ::before, ::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: 500;
+        background-color: black;
+        color: #ddd;
+    }
+    h1, h2{
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.3rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        line-height: 1.5em;
+        margin-bottom: 3.5rem;
+    }
+    .btn{
+        text-decoration: none;
+        border: solid 1px #ddd;
+        background-color: #ddd;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: black;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: transparent;
+        color: #ddd;
+    }
+    .section{
+        padding: 3rem 10vw;
+    }
+    #title-section{
+        /* text-align: left;   default */
+    }
+    #section-1{
+        background-color: darkolivegreen;
+        text-align: right;
+    }
+    #section-2{
+        text-align: center;
+    }
+
+    #section-3{
+        position: relative;
+        text-align: justify;
+    }
+    #section-3::after{
+        content: "";
+        height: 100%;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('/images/city_night.jpg') center/cover no-repeat;
+        z-index: -1;
+        opacity: 0.5;
+    }
+</style>
+<body>
+    <div class="section" id="title-section">
+        <h1>Find your tour package summary below!</h1>
+    </div>
+
+    <div class="section" id="section-1">
+        <h2>Your first step on the cruise...</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod natus magnam, officia esse ducimus obcaecati ad asperiores error impedit, similique blanditiis fugit cumque itaque! Omnis optio possimus facilis aperiam voluptatibus assumenda mollitia ab numquam ea pariatur magni aspernatur fuga distinctio, nulla earum, commodi dolor quo reiciendis minima nemo ratione impedit officiis, recusandae beatae? Quidem aliquam voluptatum cumque, quod, ipsa veritatis amet eligendi reiciendis eos deserunt nemo a ea placeat veniam autem perspiciatis, saepe magnam? Facere incidunt earum sit aliquam. Temporibus.</p>
+        <button class="btn">Button 1</button>
+        <button class="btn">Button 2</button>
+    </div>
+
+    <div class="section" id="section-2">
+        <h2>This is how you're going to spend the next 3 days!</h2>
+        <p>Ratione et nihil ipsum officia quae, possimus voluptatum saepe ipsam, autem, voluptas consequuntur maxime qui nobis unde ad quidem non inventore vel accusamus assumenda! Explicabo, a provident, voluptas alias eum soluta voluptatem dolorum reprehenderit modi quas deleniti. Ex minus adipisci deleniti magnam error voluptatem praesentium quis. Quod, nulla? Provident explicabo voluptatum nam vitae asperiores, in nobis pariatur sint laudantium est quam, non facilis, architecto at minima velit praesentium sed temporibus optio accusantium id? Ratione quidem cupiditate, quam qui aspernatur id.</p>
+        <button class="btn">Button 3</button>
+        <button class="btn">Button 4</button>
+    </div>
+
+    <div class="section" id="section-3">
+        <h2>Leave for your home sweet home with splendid memories...</h2>
+        <p>Illo blanditiis magni labore sunt temporibus adipisci assumenda placeat officiis id enim nihil sed, repellendus perspiciatis vitae consectetur, numquam deleniti porro laudantium recusandae ratione! Error molestias omnis distinctio enim vitae quibusdam exercitationem voluptatibus adipisci hic unde delectus, mollitia laboriosam recusandae velit odio. Accusamus officia, voluptate nulla veritatis illo cumque. Mollitia voluptates, dicta consequuntur placeat numquam aspernatur sit corrupti recusandae odit maxime, beatae laudantium omnis tenetur unde, officia veniam impedit eligendi. Laborum assumenda explicabo, quae omnis blanditiis non. Expedita, amet quam.</p>
+        <a class="btn" href="#">Button 5</a>
+        <a class="btn" href="#">Button 6</a>
+    </div>
+
+</body>
+
+</html>
+<!-- 
+    Next class: display- block, inline, inline-block
+    list-style-type,
+    outline
+
+    display flex
+ -->
