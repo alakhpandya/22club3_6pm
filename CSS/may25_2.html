@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .boxes{
+        width: 150px;
+        height: 150px;
+        border: darkgreen solid;
+        background-color: lightgreen;
+        font-family: cursive;
+        /* font-size: 1.5rem; */
+        font-weight: 700;
+        /* margin: 0 1rem; */
+    }
+    .container{
+        border: solid black;
+        /* height: 500px; */
+        height: 100vh;
+        /* padding: 0 40px; */
+        display: flex;
+
+        /* Horizontal Allignment */
+        /* justify-content: center; */
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start;        default */
+
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+        
+        /* gap: 2rem; */
+
+        /* Vertical Allignment */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start;    default */
+    }
+    #box1{
+        /* flex-grow: 0;   default */
+        flex-grow: 1;
+    }
+    #box2{
+        /* flex-shrink: 1;     default */
+        flex-shrink: 0;
+    }
+    #box3{
+        flex-shrink: 2;
+        flex-grow: 2;
+    }
+    #box4{
+        flex-grow: 3;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="boxes" id="box1">Home</div>
+        <div class="boxes" id="box2">About Us</div>
+        <div class="boxes" id="box3">Contact</div>
+        <div class="boxes" id="box4">Our Clientale</div>
+        <div class="boxes" id="box5">Services</div>
+        <div class="boxes" id="box6">Career</div>
+    </div>
+</body>
+</html>
+<!-- 
+    Next Lecture: flex-direction, flex-basis, align-self, flex-wrap -->
