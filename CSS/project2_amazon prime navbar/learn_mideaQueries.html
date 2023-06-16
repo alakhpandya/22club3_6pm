@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ---------------- Fontawesome CSS ---------------- -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .boxes{
+        width: 200px;
+        height: 200px;
+        border: darkgreen solid;
+        background-color: lightgreen;
+        font-family: cursive;
+        font-weight: 700;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        /* gap: 20px; */
+    }
+
+    .bar-icon{
+        display: none;
+        align-self: center;
+        font-size: 1.5rem;
+    }
+    @media (max-width: 1200px){
+        .boxes{
+            height: 150px;
+            width: 150px;
+            background-color: cadetblue;
+            border-color: navy;
+            text-align: center;
+        }
+        .container{
+            background-color: lightgreen;
+        }
+    }
+    @media (max-width: 900px){
+        .boxes{
+            height: 100px;
+            width: 100px;
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 30px;
+        }
+    }
+    @media (max-width: 600px){
+        #box2, #box3, #box4, #box5, #box6{
+            display: none;
+        }
+        .bar-icon{
+            display: block;
+        }
+    }
+    @media (max-width: 450px){
+        #box2, #box3, #box4, #box5, #box6{
+            display: block;
+        }
+        .bar-icon{
+            display: none;
+        }
+        .container{
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .boxes{
+            width: 250px;
+            height: 250px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="boxes" id="box1">Home</div>
+        <div class="boxes" id="box2">About Us</div>
+        <div class="boxes" id="box3">Contact</div>
+        <div class="boxes" id="box4">Our Clientale</div>
+        <div class="boxes" id="box5">Services</div>
+        <div class="boxes" id="box6">Career</div>
+        <i class="fa-solid fa-bars bar-icon"></i>
+    </div>
+</body>
+</html>

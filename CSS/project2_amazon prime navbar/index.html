@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------- Fontawesome CSS ---------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ---------------- Custom CSS ---------------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="nav-lg">
+        <div class="nav-left">
+            <a href="index.html">
+                <img class="nav-logo" src="/logo.png" alt="">
+            </a>
+            <ul class="nav-left-menu">
+                <li><a href="#" class="nav-links">Home</a></li>
+                <li><a href="#" class="nav-links">Store</a></li>
+                <li><a href="#" class="nav-links">Channels</a></li>
+                <li><a href="#" class="nav-links active">
+                        Category
+                        <i class="fa-solid fa-caret-down dropdown-arrows"></i>
+                    </a></li>
+                <li><a href="#" class="nav-links">My stuff</a></li>
+            </ul>
+        </div>
+        <ul class="nav-right">
+            <li><a href="#" class="btn">Try for free</a></li>
+            <li><a href="#" class="nav-right-links">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a></li>
+            <li><a href="#" class="nav-right-links">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>EN</span>
+                    <i class="fa-solid fa-caret-down dropdown-arrows"></i>
+                </a></li>
+            <li><a href="#" class="nav-right-links">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-caret-down dropdown-arrows"></i>
+                </a></li>
+        </ul>
+    </nav>
+    <nav class="nav-md">
+        <div class="nav-upper">
+            <div class="nav-left">
+                <a href="index.html">
+                    <img class="nav-logo" src="/logo.png" alt="">
+                </a>
+            </div>
+            <ul class="nav-right">
+                <li><a onclick="document.querySelector('.nav-md').classList.toggle('show-nav-md')" href="#" class="browse-btn">
+                        Browse
+                        <i class="fa-solid fa-caret-down dropdown-arrows"></i>
+                    </a></li>
+                <li><a href="#" class="btn">Try for free</a></li>
+                <li><a href="#" class="nav-right-links">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a></li>
+                <li><a href="#" class="nav-right-links">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>EN</span>
+                        <i class="fa-solid fa-caret-down dropdown-arrows"></i>
+                    </a></li>
+                <li><a href="#" class="nav-right-links">
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-caret-down dropdown-arrows"></i>
+                    </a></li>
+            </ul>
+        </div>
+
+
+        <ul class="nav-down-menu">
+            <li><a href="#" class="nav-links">Home</a></li>
+            <li><a href="#" class="nav-links">Store</a></li>
+            <li><a href="#" class="nav-links">Channels</a></li>
+            <li><a href="#" class="nav-links active">
+                    Category
+                    <i class="fa-solid fa-caret-down dropdown-arrows"></i>
+                </a></li>
+            <li><a href="#" class="nav-links">My stuff</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-sm">
+        <div class="nav-upper">
+            <div class="nav-left">
+                <a href="index.html">
+                    <img class="nav-logo" src="/logo.png" alt="">
+                </a>
+            </div>
+            <i class="fa-solid fa-bars bar-icon"></i>
+        </div>
+        
+    </nav>
+</body>
+
+</html>

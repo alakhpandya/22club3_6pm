@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+/* ---------------- CSS Reset ---------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- Global Styling ---------------- */
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
+.btn{
+    background-color: #0F79AF;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: #1399de;
+}
+.active{
+    font-weight: 700;
+}
+
+
+/* ---------------- Navbar ---------------- */
+
+.nav-lg, .nav-left, .nav-left-menu, .nav-right, .nav-upper{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-lg, .nav-upper{
+    background-color: #3D454F;
+    height: 5rem;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.nav-logo{
+    height: 2.5rem;
+}
+
+.browse-btn{
+    display: none;
+}
+.nav-md{
+    display: none;
+    height: 5rem;
+    overflow: hidden;
+    background-color: #3D454F;
+    transition: 0.5s;
+}
+
+.nav-down-menu{
+    padding: 0 30px;
+}
+.nav-down-menu li{
+    padding: 1rem 0;
+}
+.show-nav-md{
+    height: 22rem;
+}
+.nav-sm{
+    display: none;
+}
+
+/* ---------------- Media Queries ---------------- */
+@media (max-width: 1000px){
+    .nav-lg{
+        display: none;
+    }
+    .nav-md{
+        display: block;
+    }
+    .browse-btn{
+        display: block;
+    }
+}
+@media (max-width: 650px){
+    .nav-sm{
+        display: block;
+    }
+    .nav-md{
+        display: none;
+    }
+}
