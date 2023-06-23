@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div{
+        border: solid;
+        width: 200px;
+        height: 100px;
+        margin: 3rem auto;    
+        /* overflow-y: hidden; */
+        /* overflow-y: scroll; */
+        /* overflow-y: auto; */
+
+        /* overflow-x: scroll; */
+        /* overflow-x: auto; */
+
+        overflow: auto;
+    }
+    #box1{
+        padding: 1rem;   
+    }
+    #box3{
+        overflow: hidden;
+    }
+    img{
+        width: 250px;
+        /* transform: translateX(-50px);
+        transform: translateY(-50px); */
+        transform: translate(-50px, -10px);
+    }
+</style>
+<body>
+    <div id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam voluptatum vero ducimus et doloribus, nulla fuga placeat eius alias obcaecati, optio eveniet sunt voluptates minus, mollitia officia consectetur iure.</div>
+
+    <div id="box2">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div id="box3">
+        <img src="/img/road-1072823_640.jpg" alt="">
+    </div>
+</body>
+</html>
