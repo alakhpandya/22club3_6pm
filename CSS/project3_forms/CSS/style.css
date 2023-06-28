@@ -4,3 +4,115 @@
 font-family: 'IBM Plex Sans', sans-serif;
 font-family: 'Libre Caslon Text', serif;
 */
+
+
+/* --------------------------------- CSS Reset --------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------------- Variables --------------------------------- */
+:root{
+    --title-fonts: 'Libre Caslon Text', serif;
+    --normal-fonts: 'IBM Plex Sans', sans-serif;
+    --black: #1C0C5B;
+    --white: #99DBF5;
+    --light-color1: #00A8CC;
+    --dark-color1: #0E548E;
+}
+
+/* --------------------------------- Global Styling --------------------------------- */
+body{
+    background-color: var(--white);
+    font-family: var(--normal-fonts);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+/* --------------------------------- Navbar --------------------------------- */
+
+nav{
+    background-color: var(--black);
+    height: 5rem;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.show-nav{
+    height: 15rem;
+}
+
+.nav-upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 5rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+.nav-logo{
+    height: 4rem;
+}
+
+.nav-lower{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.nav-lower li{
+    padding: 1.5rem 0;
+}
+.nav-links{
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.nav-login-link{
+    border-bottom: 1px solid var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------- Midea Queries --------------------------------- */
+@media (min-width: 750px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bar-icon{
+        display: none;
+    }
+    .nav-lower{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .nav-lower li{
+        padding: 0;
+    }
+    .nav-login-link{
+        border-bottom: none;
+    }
+    .nav-links{
+        padding: 0.5rem 1.5rem;
+        border: solid;
+    }
+}
