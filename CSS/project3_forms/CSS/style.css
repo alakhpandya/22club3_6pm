@@ -73,19 +73,55 @@ nav{
 .nav-links{
     color: var(--white);
     font-size: 1.2rem;
+    position: relative;
 }
 
 .nav-login-link{
     border-bottom: 1px solid var(--white);
 }
 
-
-
-
-
-
-
-
+/* --------------------------------- Disappearing Borders --------------------------------- */
+.nav-border{
+    position: absolute;
+    background-color: var(--light-color1);
+    transition: 0.2s;
+}
+.left-border{
+    height: 0;
+    width: 2.3px;
+    top: 0;
+    left: 0;
+}
+.nav-links:hover .left-border{
+    height: 100%;
+}
+.top-border{
+    height: 1.5px;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+.nav-links:hover .top-border{
+    width: 100%;
+}
+.bottom-border{
+    height: 1.5px;
+    width: 0;
+    bottom: 0;
+    right: 0;
+}
+.nav-links:hover .bottom-border{
+    width: 100%;
+}
+.right-border{
+    height: 0;
+    width: 2.3px;
+    bottom: 0;
+    right: 0;
+}
+.nav-links:hover .right-border{
+    height: 100%;
+}
 
 
 
@@ -112,7 +148,6 @@ nav{
         border-bottom: none;
     }
     .nav-links{
-        padding: 0.5rem 1.5rem;
-        border: solid;
+        padding: 0 1rem 5px;
     }
 }
