@@ -1,1 +1,133 @@
-<h1>Signup Page</h1>
+<!-- 
+    name
+    mobile
+    qualification
+
+    email
+    pass
+    conf pass
+
+    gender
+    terms & condition
+    Register button
+
+    already registered? log in
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------------------- Font awesome css ---------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ---------------------- Custom css ---------------------- -->
+    <link rel="stylesheet" href="/CSS/style.css">
+
+    <title>Royal | Signup</title>
+</head>
+
+<!-- <style>
+    .form-container{
+        max-width: 700px;
+    }
+</style> -->
+
+<body>
+    <nav>
+        <div class="nav-upper">
+            <a href="index.html">
+                <img class="nav-logo" src="/img/logo_royal.png" alt="">
+            </a>
+            <i onclick="document.querySelector('nav').classList.toggle('show-nav')"
+                class="fa-solid fa-bars bar-icon"></i>
+        </div>
+        <ul class="nav-lower">
+            <li class="nav-login-link">
+                <a class="nav-links" href="login.html">Login
+                    <div class="nav-border left-border"></div>
+                    <div class="nav-border top-border"></div>
+                    <div class="nav-border right-border"></div>
+                    <div class="nav-border bottom-border"></div>
+                </a>
+            </li>
+            <li><a class="nav-links" href="signup.html">Signup
+                    <div class="nav-border left-border"></div>
+                    <div class="nav-border top-border"></div>
+                    <div class="nav-border right-border"></div>
+                    <div class="nav-border bottom-border"></div>
+                </a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container signup-form-container">
+        <form action="" class="login-signup-form">
+            <p class="form-title">Create Account</p>
+            <div class="form-lg">
+                <div class="personal-info">
+                    <div class="input-box">
+                        <input class="form-input" type="text" required>
+                        <label class="input-label">Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input class="form-input" type="text" required>
+                        <label class="input-label">Mobile</label>
+                    </div>
+                    <div class="input-box">
+                        <select class="form-input" name="" id="" required>
+                            <option value="">SSC</option>
+                            <option value="">HSC</option>
+                            <option value="">Graduate</option>
+                            <option value="">PG</option>
+                            <option value="">PhD</option>
+                        </select>
+                        <label class="input-label">Qualification</label>
+                    </div>
+                </div>
+                <div class="account-info">
+                    <div class="input-box">
+                        <input class="form-input" type="text" required>
+                        <label class="input-label">E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <input class="form-input" type="password" required>
+                        <label class="input-label">Password</label>
+                        <i class="fa-solid fa-lock lock-icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input class="form-input" type="password" required>
+                        <label class="input-label">Confirm Password</label>
+                        <i class="fa-solid fa-lock lock-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gender-box">
+                <div><input type="radio" name="gender" id="female"> <label for="female">Female</label></div>
+                <div><input type="radio" name="gender" id="male"> <label for="male">Male</label></div>
+                <div><input type="radio" name="gender" id="other"> <label for="other">Other</label></div>
+            </div>
+            <div class="remember-forget-pwd-box">
+                <div class="checkbox-container">
+                    <input type="checkbox" class="stylish-checkbox" name="" id="tnc">
+                    <label for="tnc">I agree to the terms of use.</label>
+                </div>
+            </div>
+
+
+            <div class="submit-box">
+                <input type="submit" value="Register">
+            </div>
+            <div class="new-old-user-box">
+                <span>Have an account?</span>
+                <a href="login.html" class="create-ac-login-link">Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
