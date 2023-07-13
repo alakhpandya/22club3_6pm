@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(209, 232, 251);
+        padding: 1rem;
+    }
+    .container{
+        display: grid;
+        gap: 1rem;
+
+        /* grid-template-columns: 400px 400px 400px; */
+        /* grid-template-columns: 600px 300px 300px; */
+        /* grid-template-columns: 300px 300px 300px 300px; */
+        /* grid-template-columns: 25% 25% 25% 25%; */
+
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        /* grid-template-columns: 1fr 2fr 3fr 1fr; */
+
+        /* grid-template-columns: repeat(1fr, 4);      wrong order will not work */
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .cards{
+        border-radius: 1rem;
+    }
+    #item1, #item5{
+        grid-column: span 2;
+    }
+    #item3, #item4{
+        background-color: white;
+    }
+    #item1{
+        background-color: blueviolet;
+    }
+    #item2{
+        background-color: darkslategray;
+    }
+    #item3{
+        grid-row: span 2;
+    }
+    #item5{
+        background-color: #333;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="cards" id="item1">Card 1</div>
+        <div class="cards" id="item2">Card 2</div>
+        <div class="cards" id="item3">Card 3</div>
+        <div class="cards" id="item4">Card 4</div>
+        <div class="cards" id="item5">Card 5</div>
+    </div>
+</body>
+</html>
