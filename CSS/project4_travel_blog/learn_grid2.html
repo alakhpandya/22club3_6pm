@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(209, 232, 251);
+        padding: 1rem;
+        font-family: sans-serif;
+    }
+    .container{
+        display: grid;
+        gap: 1rem;
+    }
+    .cards{
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    .profile{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .profile-pic{
+        height: 40px;
+        width: 40px;
+        border: solid;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .name{
+        font-size: 1.15rem;
+    }
+    .headline{
+        margin: 2rem 0 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    #item1, #item2, #item5{
+        color: white;
+    }
+    #item3, #item4{
+        background-color: white;
+    }
+    #item1{
+        background-color: blueviolet;
+    }
+    #item2{
+        background-color: darkslategray;
+    }
+    #item5{
+        background-color: #333;
+    }
+
+    @media (min-width: 650px){
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #item1, #item5{
+            grid-column: span 2;
+        }
+        #item3{
+            grid-row: span 2;
+        }
+    }
+    @media (min-width: 1024px){
+        .container{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="cards" id="item1">
+            <div class="profile">
+                <div class="profile-pic"><img src="" alt=""></div>
+                <div class="name-box">
+                    <h2 class="name">Daniel Clifford</h2>
+                    <p class="designation">Varified Graduate</p>
+                </div>
+            </div>
+            <p class="headline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut culpa amet facere omnis quam ipsa asperiores, eius, ipsum nisi rerum adipisci praesentium!</p>
+            <p class="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam suscipit totam doloribus inventore sint praesentium veritatis tenetur sapiente perspiciatis? Accusamus voluptatibus illo, natus, perferendis aspernatur possimus doloremque sint minus architecto consequuntur illum ipsum. Nihil delectus impedit sunt. Accusantium inventore veniam quibusdam dolore adipisci modi dolorem commodi, alias sit fugit totam a amet labore eos.</p>
+        </div>
+        <div class="cards" id="item2">
+            <div class="profile">
+                <div class="profile-pic"><img src="" alt=""></div>
+                <div class="name-box">
+                    <h2 class="name"></h2>
+                    <p class="designation"></p>
+                </div>
+            </div>
+            <p class="headline">Perspiciatis quos rem a natus repellendus nostrum earum!</p>
+            <p class="message">Architecto sint consequuntur corporis dicta, harum esse natus enim nesciunt velit repudiandae facilis cumque veritatis ipsa! Perspiciatis doloribus cum in doloremque? Aliquid optio nostrum recusandae.</p>
+        </div>
+        <div class="cards" id="item3">
+            <div class="profile">
+                <div class="profile-pic"><img src="" alt=""></div>
+                <div class="name-box">
+                    <h2 class="name"></h2>
+                    <p class="designation"></p>
+                </div>
+            </div>
+            <p class="headline">Quod facere, eius adipisci assumenda pariatur vel in! Ipsum voluptatibus!</p>
+            <p class="message">Molestiae, eum vero. Ratione sit quia dolor nemo, officiis illum ducimus? Deleniti quasi eum consectetur non inventore sint quo excepturi distinctio esse cum ipsam alias sunt, harum quibusdam reprehenderit voluptas porro suscipit in dicta blanditiis sequi eius ad qui laboriosam. Voluptatibus facilis maiores cum, sed fugiat quas obcaecati, nulla eligendi eius rem consectetur nemo molestias harum cupiditate, ipsum et iusto. At eum, incidunt architecto dolore vero facilis animi dicta distinctio, voluptatem repellat facere a. Ullam, in similique fuga explicabo, dolore, id doloremque accusantium laboriosam unde adipisci ab iste! Aspernatur, in! Id alias natus distinctio dolorum ipsa commodi dignissimos inventore porro, aliquid excepturi harum magni modi qui, rem maxime corrupti obcaecati facilis at assumenda, eligendi accusamus velit nemo! Placeat at ad maiores, est commodi similique facere architecto dolorum eveniet! Magni, cupiditate similique. Atque, repudiandae eum?</p>
+        </div>
+        <div class="cards" id="item4">
+            <div class="profile">
+                <div class="profile-pic"><img src="" alt=""></div>
+                <div class="name-box">
+                    <h2 class="name"></h2>
+                    <p class="designation"></p>
+                </div>
+            </div>
+            <p class="headline">Quos provident, ipsum eos placeat odit esse unde. Consequuntur?</p>
+            <p class="message">Dicta, mollitia id fuga fugit hic, illo consectetur debitis temporibus itaque omnis dolorum corrupti harum soluta quia! Cupiditate veniam tenetur temporibus dolores placeat.</p>
+        </div>
+        <div class="cards" id="item5">
+            <div class="profile">
+                <div class="profile-pic"><img src="" alt=""></div>
+                <div class="name-box">
+                    <h2 class="name"></h2>
+                    <p class="designation"></p>
+                </div>
+            </div>
+            <p class="headline">Ipsa dolores soluta dicta temporibus cupiditate aliquid ex. Consectetur adipisci alias facere nam inventore! Nisi assumenda.</p>
+            <p class="message">Ducimus dicta placeat tempora qui iure amet facilis itaque voluptates, eum dolore saepe, vel perferendis quis optio quisquam quae praesentium dolores. Nihil earum dolorum quas, id autem molestias minus, facere deserunt, laboriosam magni quibusdam accusamus. Omnis quasi eos, reiciendis illo repellendus est similique quam aspernatur explicabo.</p>
+        </div>
+    </div>
+</body>
+</html>
