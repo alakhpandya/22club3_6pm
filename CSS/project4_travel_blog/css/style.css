@@ -12,9 +12,51 @@
 :root{
     --font-grey: #3f4954;
     --font-light: rgba(104, 102, 102, 0.855);
-    --black: black;
-    --dark-color1: #0F0F0F;
-    --dark-color2: #104F55;
-    --gradient: linear-gradient(120deg, #a1c4fd, #c2e9fb);
 
+    --black: #0F0F0F;
+    --dark-color1: #104F55;
+    --gradient: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    --white: white;
+
+    /* 
+        livvic: buttons
+        abel: primary fonts
+        lexend: secondary fonts
+        anton: headline fonts
+    */
+    --primary-fonts: "Abel", sans-serif;
+    --secondary-fonts: "Lexend", cursive;
+    --btn-fonts: "Livvic", "Courier New";
+    --headline-fonts: "Anton", Impact;
+}
+
+/* --------------------------- Global Classes and tags --------------------------- */
+body{
+    background-color: var(--white);
+    font-family: var(--primary-fonts);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+
+/* --------------------------- Navbar --------------------------- */
+.navbar{
+    background-color: #a1c4fd;
+    height: 5rem;
+
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.brand-logo{
+    font-family: var(--secondary-fonts);
+    color: var(--font-grey);
 }
