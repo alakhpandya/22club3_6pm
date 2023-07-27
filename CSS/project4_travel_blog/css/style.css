@@ -57,12 +57,7 @@ ul{
     color: var(--white);
     border: solid 1px;
 }
-.svg-wave{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translateY(40%);
-}
+
 
 /* --------------------------- Navbar --------------------------- */
 .navbar{
@@ -116,22 +111,23 @@ ul{
 
 /* --------------------------- Banner --------------------------- */
 .banner{
-    height: 90vh;
+    height: 600px;
     text-align: center;
     position: relative;
     padding-top: 13rem;
     color: var(--white);
+    overflow: hidden;
 }
 .banner::before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    height: 90vh;
+    height: 600px;
     width: 100vw;
     background: url('/assets/pexels-deva-darshan.jpg') no-repeat;
     background-position: top left;
-    background-size: auto;
+    background-size: 1000px 600px;
     z-index: -1;
 }
 .banner-text{
@@ -140,8 +136,15 @@ ul{
     font-weight: 700;
     margin: 0.5rem 0 1.5rem;
 }
-
-
+.wave-box{
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.svg-wave{
+    width: 1500px;
+}
 
 /* --------------------------- Media Queries --------------------------- */
 /* @media screen and (min-width: 750px) { */
@@ -166,7 +169,32 @@ ul{
 }
 
 @media (min-width: 1000px){
+    .banner{
+        height: 900px;
+    }
     .banner::before{
-        background-size: 100vw;
+        height: 900px;
+        background-size: 1500px 900px;
+    }
+    .svg-wave{
+        width: 1500px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .banner{
+        height: 60.1vw;
+    }
+    .banner::before{
+        height: 60vw;
+        background-size: 100vw 60vw;
+    }
+    .wave-box{
+        height: 550px;
+        z-index: 5;
+        transform: translateY(50px);
+    }
+    .svg-wave{
+        width: 100vw;
     }
 }
