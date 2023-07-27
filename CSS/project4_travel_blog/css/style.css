@@ -41,22 +41,132 @@ a{
 ul{
     list-style-type: none;
 }
-
-
+.btn{
+    background: var(--gradient);
+    padding: 0.8rem 2.4rem;
+    border: none;
+    font-size: 1.1rem;
+    font-family: var(--btn-fonts);
+    cursor: pointer;
+}
+.rounded-btn{
+    border-radius: 2em;
+}
+.banner-btn:hover{
+    background: transparent;
+    color: var(--white);
+    border: solid 1px;
+}
+.svg-wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(40%);
+}
 
 /* --------------------------- Navbar --------------------------- */
 .navbar{
-    background-color: #a1c4fd;
     height: 5rem;
-
     padding: 0 1.5rem;
+    font-size: 1.5rem;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.navbar a{
+    color: var(--font-grey);
+}
+.nav-mobile{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem;
+    height: 5rem;
+}
+.show-nav{
+    height: 32rem;
 }
 
 .brand-logo{
     font-family: var(--secondary-fonts);
     color: var(--font-grey);
+}
+
+.nav-menu{
+    padding-left: 4rem;
+    font-size: 1.1rem;
+}
+.nav-menu li{
+    margin: 2.5rem 0;
+}
+.nav-menu li:hover{
+    background-color: var(--dark-color1);
+}
+.nav-menu li:hover .nav-links{
+    color: var(--white);
+}
+
+.social{
+    font-size: 1.1rem;
+    display: flex;
+    gap: 1rem;
+}
+.social-icon:hover{
+    color: var(--font-light);
+}
+
+/* --------------------------- Banner --------------------------- */
+.banner{
+    height: 90vh;
+    text-align: center;
+    position: relative;
+    padding-top: 13rem;
+    color: var(--white);
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90vh;
+    width: 100vw;
+    background: url('/assets/pexels-deva-darshan.jpg') no-repeat;
+    background-position: top left;
+    background-size: auto;
+    z-index: -1;
+}
+.banner-text{
+    font-family: var(--secondary-fonts);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1.5rem;
+}
+
+
+
+/* --------------------------- Media Queries --------------------------- */
+/* @media screen and (min-width: 750px) { */
+/* @media all and (min-width: 750px) { */
+@media (min-width: 750px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bar-icon{
+        display: none;
+    }
+    .nav-menu{
+        padding-left: 0;
+        display: flex;
+    }
+    .nav-menu li{
+        height: 5rem;
+        padding: 1.8rem 1rem 0;
+    }
+}
+
+@media (min-width: 1000px){
+    .banner::before{
+        background-size: 100vw;
+    }
 }
