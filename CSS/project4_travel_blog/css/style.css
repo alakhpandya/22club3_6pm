@@ -146,6 +146,23 @@ ul{
     width: 1500px;
 }
 
+/* --------------------------- Carousel --------------------------- */
+.item{
+    width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.carousel-title{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+.item p{
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+
 /* --------------------------- Media Queries --------------------------- */
 /* @media screen and (min-width: 750px) { */
 /* @media all and (min-width: 750px) { */
