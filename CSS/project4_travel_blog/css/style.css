@@ -145,8 +145,14 @@ ul{
 .svg-wave{
     width: 1500px;
 }
-
+ 
 /* --------------------------- Carousel --------------------------- */
+.carousel{
+    margin: 5rem 0;
+    background: url('/assets/Abract01.png') no-repeat;
+    background-size: 100%;
+    background-position-y: 80%;
+}
 .item{
     width: 80%;
     margin: 5rem auto;
@@ -161,7 +167,90 @@ ul{
     font-size: 1.2rem;
     margin: 2rem 0;
 }
+.owl-nav{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: transparent;
+    color: var(--font-light);
+}
 
+/* --------------------------- Main --------------------------- */
+main{
+    display: grid;
+}
+.blog-post-container{
+    width: 80%;
+    margin: auto;
+}
+.blog-img-container{
+    overflow: hidden;
+    position: relative;
+}
+.blog-img{
+    width: 100%;
+    transition: 0.4s;
+}
+.blog-img:hover{
+    scale: 1.2;
+}
+.sticker{
+    /* display: none; */
+    background: var(--gradient);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem 1.5rem;
+}
+.blog-headline{
+    font-family: var(--headline-fonts);
+    font-size: 1.4rem;
+    color: var(--font-grey);
+    margin: 1.5rem 0 1rem;
+}
+.blog-text{
+    font-family: var(--secondary-fonts);
+    color: var(--font-light);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.seperator{
+    margin: 1.5rem auto;
+    width: 90%;
+    color: var(--font-light);
+    background-color: var(--font-light);
+}
+
+/* --------------------------- Sidebar --------------------------- */
+section{
+
+}
+.sidebar{
+    width: 80%;
+    margin: 5rem auto;
+}
+.sidebar-title{
+    font-family: var(--secondary-fonts);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.sidebar-content{
+    margin: 2rem 0;
+}
+.category-name{
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-img-container{
+    position: relative;
+}
 
 /* --------------------------- Media Queries --------------------------- */
 /* @media screen and (min-width: 750px) { */
@@ -183,6 +272,13 @@ ul{
         height: 5rem;
         padding: 1.8rem 1rem 0;
     }
+    .carousel{
+        background-size: 65%;
+        background-position: top right;
+    }
+    main{
+        grid-template-columns: 70% 30%;
+    }
 }
 
 @media (min-width: 1000px){
@@ -196,6 +292,7 @@ ul{
     .svg-wave{
         width: 1500px;
     }
+    
 }
 
 @media (min-width: 1500px) {
@@ -213,5 +310,9 @@ ul{
     }
     .svg-wave{
         width: 100vw;
+    }
+    .carousel{
+        background-size: 50%;
+        background-position: top right;
     }
 }
