@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Tours | Home</title>
 
+    <!-- --------------------------- AOS Animation CSS --------------------------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- --------------------------- Owl Carousel CSS --------------------------- -->
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
@@ -43,10 +46,11 @@
 
     <!-- --------------------------- Banner --------------------------- -->
     <div class="banner">
-        <h3 class="banner-title">Tours & Travels</h3>
-        <p class="banner-text">Amazing Place on Earth</p>
-        <button class="btn rounded-btn banner-btn">Explore</button>
-
+        <div data-aos="fade-up">
+            <h3 class="banner-title">Tours & Travels</h3>
+            <p class="banner-text">Amazing Place on Earth</p>
+            <button class="btn rounded-btn banner-btn">Explore</button>
+        </div>
         <div class="wave-box">
             <svg class="svg-wave" height="" width="" viewBox="0 0 1440 100">
                 <path fill="#fff" fill-opacity="1"
@@ -59,19 +63,19 @@
 
     <!-- --------------------------- Carousel --------------------------- -->
     <div class="owl-carousel owl-theme carousel">
-        <div class="item">
+        <div data-aos="fade-right" class="item">
             <img src="/assets/Blog-post/post-1.jpg" class="carousel-img" alt="">
             <h3 class="carousel-title">London Fashion week's continued the evolution</h3>
             <button class="btn rounded-btn">Fashion</button>
             <p>2 minutes</p>
         </div>
-        <div class="item">
+        <div class="item" data-aos="zoom-in">
             <img src="/assets/Blog-post/post-2.jpg" class="carousel-img" alt="">
             <h3 class="carousel-title">London Fashion week's continued the evolution</h3>
             <button class="btn rounded-btn">Fashion</button>
             <p>2 minutes</p>
         </div>
-        <div class="item">
+        <div class="item" data-aos="fade-left">
             <img src="/assets/Blog-post/post-3.jpg" class="carousel-img" alt="">
             <h3 class="carousel-title">London Fashion week's continued the evolution</h3>
             <button class="btn rounded-btn">Fashion</button>
@@ -196,43 +200,113 @@
             <section>
                 <p class="sidebar-title">Category</p>
                 <div class="sidebar-content">
-                    <p class="btn rounded-btn category-name">
+                    <p data-aos="fade-left" class="btn rounded-btn category-name">
                         <span>Software</span>
                         <span>(05)</span>
                     </p>
-                    <p class="btn rounded-btn category-name">
+                    <p data-aos="fade-left" class="btn rounded-btn category-name">
                         <span>Technology</span>
                         <span>(02)</span>
                     </p>
-                    <p class="btn rounded-btn category-name">
+                    <p data-aos="fade-left" class="btn rounded-btn category-name">
                         <span>Shopping</span>
                         <span>(07)</span>
                     </p>
-                    <p class="btn rounded-btn category-name">
+                    <p data-aos="fade-left" class="btn rounded-btn category-name">
                         <span>Lifestyle</span>
                         <span>(01)</span>
                     </p>
-                    <p class="btn rounded-btn category-name">
+                    <p data-aos="fade-left" class="btn rounded-btn category-name">
                         <span>Food</span>
                         <span>(08)</span>
                     </p>
                 </div>
             </section>
-            
+
             <section>
                 <p class="sidebar-title">Popular Post</p>
-                <div class="sidebar-content">
+                <div data-aos="flip-up" class="sidebar-content">
                     <div class="sidebar-img-container">
-                        <img src="/assets/popular-post/m-blog-1.jpg" alt="">
+                        <img class="popular-post-img" src="/assets/popular-post/m-blog-1.jpg" alt="">
                         <div class="sticker">
                             <i class="fa-solid fa-calendar-days"></i>&nbsp;
-                        January 14, 2019 &nbsp; &nbsp; &nbsp;
-                        2 Comments
+                            January 14, 2019 &nbsp; &nbsp; &nbsp;
+                            2 Comments
                         </div>
                     </div>
+                    <p class="popular-post-title">New data recording system to better analyse road accidents</p>
+                </div>
+                <div data-aos="flip-up" class="sidebar-content">
+                    <div class="sidebar-img-container">
+                        <img class="popular-post-img" src="/assets/popular-post/m-blog-2.jpg" alt="">
+                        <div class="sticker">
+                            <i class="fa-solid fa-calendar-days"></i>&nbsp;
+                            January 14, 2019 &nbsp; &nbsp; &nbsp;
+                            2 Comments
+                        </div>
+                    </div>
+                    <p class="popular-post-title">New data recording system to better analyse road accidents</p>
+                </div>
+                <div data-aos="flip-up" class="sidebar-content">
+                    <div class="sidebar-img-container">
+                        <img class="popular-post-img" src="/assets/popular-post/m-blog-3.jpg" alt="">
+                        <div class="sticker">
+                            <i class="fa-solid fa-calendar-days"></i>&nbsp;
+                            January 14, 2019 &nbsp; &nbsp; &nbsp;
+                            2 Comments
+                        </div>
+                    </div>
+                    <p class="popular-post-title">New data recording system to better analyse road accidents</p>
+                </div>
+                <div data-aos="flip-up" class="sidebar-content">
+                    <div class="sidebar-img-container">
+                        <img class="popular-post-img" src="/assets/popular-post/m-blog-4.jpg" alt="">
+                        <div class="sticker">
+                            <i class="fa-solid fa-calendar-days"></i>&nbsp;
+                            January 14, 2019 &nbsp; &nbsp; &nbsp;
+                            2 Comments
+                        </div>
+                    </div>
+                    <p class="popular-post-title">New data recording system to better analyse road accidents</p>
+                </div>
+                <div data-aos="flip-up" class="sidebar-content">
+                    <div class="sidebar-img-container">
+                        <img class="popular-post-img" src="/assets/popular-post/m-blog-5.jpg" alt="">
+                        <div class="sticker">
+                            <i class="fa-solid fa-calendar-days"></i>&nbsp;
+                            January 14, 2019 &nbsp; &nbsp; &nbsp;
+                            2 Comments
+                        </div>
+                    </div>
+                    <p class="popular-post-title">New data recording system to better analyse road accidents</p>
                 </div>
             </section>
-            
+
+            <section>
+                <p class="sidebar-title">Newsletter</p>
+                <form action="" class="sidebar-content">
+                    <div class="newsletter-input-box">
+                        <input type="email" name="" placeholder="Email" id="" class="newsletter-input">
+                    </div>
+                    <div class="newsletter-input-box">
+                        <input type="submit" value="Subscribe" class="newsletter-submit btn">
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <p class="sidebar-title">Popular Tags</p>
+                <div class="sidebar-content popular-tags">
+                    <p data-aos="flip-up" class="btn rounded-btn popular-tag-btn">Software</p>
+                    <p data-aos="flip-up" class="btn rounded-btn popular-tag-btn">Technology</p>
+                    <p data-aos="flip-up" class="btn rounded-btn popular-tag-btn">Travel</p>
+                    <p data-aos="flip-up" class="btn rounded-btn popular-tag-btn">Illustration</p>
+                    <p data-aos="flip-up" class="btn rounded-btn popular-tag-btn">Design</p>
+                    <p data-aos="flip-up" class="btn rounded-btn popular-tag-btn">Lifestyle</p>
+                    <p data-aos="flip-up" class="btn rounded-btn popular-tag-btn">Love</p>
+                    <p data-aos="flip-up" class="btn rounded-btn popular-tag-btn">Project</p>
+                </div>
+            </section>
         </aside>
     </main>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -240,6 +314,8 @@
 </body>
 <!-- --------------------------- jQuery JS --------------------------- -->
 <script src="/js/jQuery_3_7_0.js"></script>
+<!-- --------------------------- AOS JS --------------------------- -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- --------------------------- Owl Carousel JS --------------------------- -->
 <script src="/js/owl.carousel.min.js"></script>
 <!-- --------------------------- Custom JS --------------------------- -->
